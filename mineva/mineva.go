@@ -31,3 +31,4 @@ func (c *MinevaCmd) SetFlags(f *flag.FlagSet) {
 func (c *MinevaCmd) Execute(_ context.Context, f *flag.FlagSet, _ ...interface{}) subcommands.ExitStatus {
 	fmt.Println("I'm Mineva Zabi , I'm don't escape !! don't hide !! That's My Way !!")
 	return subcommands.ExitSuccess
+}
