@@ -3,6 +3,7 @@ package amuro
 import (
 	"context"
 	"flag"
+	"fmt"
 
 	"github.com/google/subcommands"
 )
@@ -12,11 +13,11 @@ type AmuroCmd struct {
 }
 
 func (*AmuroCmd) Name() string {
-	return "Newtype"
+	return "Amuro"
 }
 
 func (*AmuroCmd) Synopsis() string {
-	return "Wake up newtype of in you"
+	return "The best of one NewType"
 }
 
 func (*AmuroCmd) Usage() string {
@@ -28,5 +29,6 @@ func (c *AmuroCmd) SetFlags(f *flag.FlagSet) {
 }
 
 func (c *AmuroCmd) Execute(_ context.Context, f *flag.FlagSet, _ ...interface{}) subcommands.ExitStatus {
+	fmt.Println("Amuro, GAMDOM!!!  Rift Off!!!")
 	return subcommands.ExitSuccess
 }
