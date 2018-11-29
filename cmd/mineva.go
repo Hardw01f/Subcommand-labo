@@ -25,7 +25,7 @@ func (*MinevaCmd) Usage() string {
 }
 
 func (c *MinevaCmd) SetFlags(f *flag.FlagSet) {
-	f.StringVar(&c.mobilesuit, "zabifamily", "", "the Last one of Zabi family")
+	f.StringVar(&c.zabifamily, "zabifamily", "", "the Last one of Zabi family")
 }
 
 func (c *MinevaCmd) Execute(_ context.Context, f *flag.FlagSet, _ ...interface{}) subcommands.ExitStatus {
