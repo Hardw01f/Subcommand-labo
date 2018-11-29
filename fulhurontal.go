@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/Snow-HardWolf/Subcommand-labo/cmd"
+	"github.com/Snow-HardWolf/Subcommand-labo/cmd/amuro"
 
 	"github.com/google/subcommands"
 )
