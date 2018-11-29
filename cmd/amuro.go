@@ -7,26 +7,26 @@ import (
 	"github.com/google/subcommands"
 )
 
-type amuroCmd struct {
+type AmuroCmd struct {
 	mobilesuit string
 }
 
-func (*amuroCmd) Name() string {
+func (*AmuroCmd) Name() string {
 	return "Newtype"
 }
 
-func (*amuroCmd) Synopsis() string {
+func (*AmuroCmd) Synopsis() string {
 	return "Wake up newtype of in you"
 }
 
-func (*amuroCmd) Usage() string {
+func (*AmuroCmd) Usage() string {
 	return "Usage: fulhurontal [option]"
 }
 
-func (c *amuroCmd) SetFlags(f *flag.FlagSet) {
-	f.BoolVar(&c.goust, "goust", false, "goust output")
+func (c *AmuroCmd) SetFlags(f *flag.FlagSet) {
+	f.StringVar(&c.mobilesuit, "MobileSuit", "", "this is working")
 }
 
-func (c *amuroCmd) Execute(_ context.Context, f *flag.FlagSet, _ ...interface{}) subcommands.ExitStatus {
+func (c *AmuroCmd) Execute(_ context.Context, f *flag.FlagSet, _ ...interface{}) subcommands.ExitStatus {
 	return subcommands.ExitSuccess
 }

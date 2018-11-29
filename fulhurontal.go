@@ -7,8 +7,7 @@ import (
 	"os"
 	"strings"
 
-  "github.com/google/subcommands"
-  ""
+	"github.com/google/subcommands"
 )
 
 type printCmd struct {
