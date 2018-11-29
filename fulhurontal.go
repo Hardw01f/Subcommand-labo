@@ -7,6 +7,8 @@ import (
 	"os"
 	"strings"
 
+	"github.com/Snow-HardWolf/Subcommand-labo/cmd"
+
 	"github.com/google/subcommands"
 )
 
@@ -80,6 +82,8 @@ func main() {
 	subcommands.Register(subcommands.CommandsCommand(), "")
 	subcommands.Register(&printCmd{}, "")
 	subcommands.Register(&NewtypeCmd{}, "")
+	subcommands.Register(&amuro.AmuroCmd{}, "Amuro")
+	//subcommands.Register(&mineva.MinevaCmd{},"Mineva")
 
 	flag.Parse()
 	ctx := context.Background()
